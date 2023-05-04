@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import fastcampus.aop.part3.aop_part3_chapter4.databinding.ItemHistoryBinding
 import fastcampus.aop.part3.aop_part3_chapter4.model.History
 
+// bookAdapter와 사용법 동일
 class HistoryAdapter(val historyDeleteClickListener: (String) -> (Unit)) : ListAdapter<History, HistoryAdapter.ViewHolder>(diffUtil) {
 
     inner class ViewHolder(private val binding: ItemHistoryBinding) : RecyclerView.ViewHolder(binding.root) {

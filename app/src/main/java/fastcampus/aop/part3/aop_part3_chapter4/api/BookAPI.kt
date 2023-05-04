@@ -10,8 +10,11 @@ interface BookAPI {
 
     @GET("/v1/search/book.json")
     fun getBooksByName(
+        // 네이버 api는 헤더에 전달해야한다고함
         @Header("X-Naver-Client-Id") id: String,
         @Header("X-Naver-Client-Secret") secretKey: String,
+
+        // URL 파라미터로 전달
         @Query("query") keyword: String
     ): Call<SearchBooksDto>
 

@@ -7,6 +7,8 @@ import androidx.room.Query
 import fastcampus.aop.part3.aop_part3_chapter4.model.History
 import fastcampus.aop.part3.aop_part3_chapter4.model.Review
 
+
+// history dao와 동일함
 @Dao
 interface ReviewDao {
 
